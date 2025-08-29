@@ -118,3 +118,11 @@ App runs at `http://localhost:3000`.
 - Prisma connection issues: verify `DATABASE_URL`/`DIRECT_URL` and that the DB is reachable.
 - Clerk redirects: make sure `NEXT_PUBLIC_CLERK_*` URLs match routes in `app/(auth)` and after-sign-in routes exist (`/dashboard`).
 - Seed script: update `ACCOUNT_ID`/`USER_ID` in `actions/seed.js` to real IDs before calling `/api/seed`.
+
+### Highlights
+- Built full‑stack AI finance platform to track income, expenses, budgets, and multi‑account balances.
+- Integrated AI receipt scanning and auto‑categorization via Gemini to streamline transaction entry.
+- Added budget alerts, recurring transactions (cron/background jobs), and monthly insights.
+- Robust transaction CRUD with validation (React Hook Form + Zod), search/filter, and bulk actions.
+- Secure auth with Clerk (Google login, protected routes) and Arcjet hardening; deployed on Vercel.
+- Interactive analytics with charts and AI-driven spending insights.
